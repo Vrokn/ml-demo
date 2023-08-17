@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { render } from '@testing-library/react';
 import { Providers } from '../src/providers/Providers';
 

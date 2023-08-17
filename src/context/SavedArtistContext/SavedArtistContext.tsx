@@ -14,8 +14,7 @@ interface ArtistContextValue {
 export const ArtistContext = createContext<ArtistContextValue | undefined>(undefined);
 
 export const ArtistProvider: React.FC<ArtistProviderProps> = (props) => {
-  const artistData = localStorage.getItem('artists');
-  const initialArtists: Artist[] = artistData ? JSON.parse(artistData) : [];
+  const initialArtists: Artist[] = JSON.parse(localStorage.getItem('artists')!) || [];
   const [artists, setArtists] = useState<Artist[]>(initialArtists);
 
   useEffect(() => {

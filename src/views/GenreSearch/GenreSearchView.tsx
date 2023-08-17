@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Autocomplete, Grid } from '@mui/material';
+import { Autocomplete, AutocompleteRenderOptionState, Box, ImageList } from '@mui/material';
 import { TextField } from '@mui/material';
 import { getGenres, getArtistByGenre } from '../../connection';
 import debounce from '../../utils/debounce';
@@ -14,16 +14,17 @@ const GenreSearchView: React.FC = () => {
   const [query, setQuery] = useState('');
   const [artists, setArtists] = useState([]);
 
+  // Debounce the search function so it only triggers after the user stops typing for 500ms
   const search = useCallback(
-    debounce((searchString: string) => {
-      getGenres(searchString ?? query).then((response) => setGenres(response?.data.data));
+    debounce((query: string) => {
+      getGenres(query).then((response) => setGenres(response?.data.data));
     }, 500),
     []
   );
 
   const handleInputChange = (event: React.SyntheticEvent, value: string) => {
     setQuery(value);
-    search(value);
+    search(value); // Trigger the debounced search
   };
 
   const handleSelection = (event: React.SyntheticEvent, value: Genre | null) => {
@@ -57,13 +58,11 @@ const GenreSearchView: React.FC = () => {
           )}
         />
       </SearchContainer>
-      <Grid container sx={{ width: '80%', overflow: 'hidden' }} spacing={4}>
-        {artists.map((item: Artist) => (
-          <Grid item lg={4} md={6} xs={12} key={item.id}>
-            <ArtistCard artist={item} />
-          </Grid>
+      <ImageList sx={{ width: '80%', height: '100%', overflow: 'hidden' }} variant="woven" cols={3} gap={50}>
+        {artists?.map((item: Artist) => (
+          <ArtistCard key={item.id} artist={item} />
         ))}
-      </Grid>
+      </ImageList>
     </BackgroundContainer>
   );
 };

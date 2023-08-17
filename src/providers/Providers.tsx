@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactNode } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { ArtistProvider } from "../context/SavedArtistContext/SavedArtistContext";

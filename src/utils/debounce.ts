@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 function debounce(func: (...args: any[]) => void, wait: number) {
   let timeout: NodeJS.Timeout | null = null;
 
@@ -8,7 +7,7 @@ function debounce(func: (...args: any[]) => void, wait: number) {
     }
 
     timeout = setTimeout(() => {
-      func(...args);
+      func.apply(null, args);
       timeout = null;
     }, wait);
   };
