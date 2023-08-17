@@ -3,24 +3,24 @@ build: deps compile
 
 .PHONY: deps
 deps:
-	npm install
+	yarn
 
 .PHONY: compile
 compile:
-	npm run build
+	yarn build
 
 .PHONY: start
 start:
-	npm start
+	yarn start
 
 .PHONY: test
 test:
-	npm test
+	yarn test
 
 .PHONY: lint
 lint:
-	npm run lint
+	yarn lint
 
 .PHONY: lint-fix
 lint-fix:
-	npm run lint:fix
+	yarn lint:fix
