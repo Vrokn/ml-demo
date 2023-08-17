@@ -9,11 +9,11 @@ exports[`ArtistCard matches snapshot 1`] = `
       style="will-change: transform, opacity; position: relative; opacity: 1; transform: perspective(600px) rotateX(0deg); flex: 1;"
     >
       <div
-        class="css-1kumyd4"
+        class="css-hz23xd"
       >
         <h3
           class="MuiTypography-root MuiTypography-h3 css-z8x0v9-MuiTypography-root"
-          style="text-shadow: 0px 0px 20px black; color: white; font-weight: bold; padding: 0.7em 0px; text-align: center;"
+          style="text-shadow: 0px 0px 20px black; color: white; font-weight: bold; padding: 0.7em 0px; text-align: center; max-width: inherit;"
         >
           ARTIST
         </h3>
@@ -23,7 +23,7 @@ exports[`ArtistCard matches snapshot 1`] = `
       style="will-change: transform, opacity; position: absolute; opacity: 0; transform: perspective(600px) rotateX(0deg) rotateX(180deg); flex: 1;"
     >
       <div
-        class="css-jlnxgi"
+        class="css-13midx0"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-7mmmvh-MuiTypography-root-MuiLink-root"

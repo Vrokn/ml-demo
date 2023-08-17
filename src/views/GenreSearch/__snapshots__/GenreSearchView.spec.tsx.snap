@@ -3,7 +3,7 @@
 exports[`GenreSearchView renders search component and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-hwgpl7"
+    class="css-1cedog7"
   >
     <div
       class="MuiBox-root css-19t9tu6"
@@ -95,9 +95,8 @@ exports[`GenreSearchView renders search component and matches snapshot 1`] = `
         </div>
       </div>
     </div>
-    <ul
-      class="MuiImageList-root MuiImageList-woven css-w2qo5e-MuiImageList-root"
-      style="grid-template-columns: repeat(3, 1fr); gap: 50px;"
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-112iucb-MuiGrid-root"
     />
   </div>
 </DocumentFragment>

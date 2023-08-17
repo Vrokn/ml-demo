@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 export const BASE_URL = 'https://music.musicaudience.info';
 export const API_KEY = '5db48e1f3a0a4580bad47849f1317bd0';
 
-interface ApiRequestConfig extends AxiosRequestConfig { }
+type ApiRequestConfig = AxiosRequestConfig;
 
 export const apiCall = async (
   config: ApiRequestConfig,

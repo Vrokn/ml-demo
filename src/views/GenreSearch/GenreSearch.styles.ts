@@ -12,4 +12,6 @@ export const BackgroundContainer = styled.div(() => ({
   overflow: 'auto',
   backgroundColor: 'white',
   alignItems: 'center',
+  flex: 1,
+  height: '93%',
 }));

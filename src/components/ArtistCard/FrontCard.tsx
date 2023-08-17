@@ -12,12 +12,13 @@ const FrontCard = ({ name, image }: { name: string; image: string; }) => (
         color: 'white',
         fontWeight: "bold",
         padding: '0.7em 0',
-        textAlign: 'center'
+        textAlign: 'center',
+        maxWidth: 'inherit'
       }}
     >
       {name.toLocaleUpperCase()}
     </Typography>
-  </CardFront>
+  </CardFront >
 );
 
 export default FrontCard;
