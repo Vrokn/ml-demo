@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-k008qs"
+  >
+    <div
+      style="will-change: transform, opacity; position: relative; opacity: 1; transform: perspective(600px) rotateX(0deg); flex: 1;"
+    >
+      <div
+        class="css-1kumyd4"
+      >
+        <h3
+          class="MuiTypography-root MuiTypography-h3 css-z8x0v9-MuiTypography-root"
+          style="text-shadow: 0px 0px 20px black; color: white; font-weight: bold; padding: 0.7em 0px; text-align: center;"
+        >
+          ARTIST
+        </h3>
+      </div>
+    </div>
+    <div
+      style="will-change: transform, opacity; position: absolute; opacity: 0; transform: perspective(600px) rotateX(0deg) rotateX(180deg); flex: 1;"
+    >
+      <div
+        class="css-jlnxgi"
+      >
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-7mmmvh-MuiTypography-root-MuiLink-root"
+          href="/artist/1"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-twns0k-MuiTypography-root"
+          >
+            ARTIST
+          </h6>
+        </a>
+        <div
+          class="css-4z29z6"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1vo1ilw-MuiTypography-root"
+          >
+            Secondary:
+          </span>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary css-1xjc7rt-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+            >
+              Test Genre
+            </span>
+          </div>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-13yqcsl-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="StarBorderIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m22 9.24-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+              />
+            </svg>
+          </span>
+          Add
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

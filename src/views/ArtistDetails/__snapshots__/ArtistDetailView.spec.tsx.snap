@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistDetailView renders artist details and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-zk51sn"
+  >
+    <span
+      class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-ug1ls-MuiLinearProgress-root"
+      role="progressbar"
+    >
+      <span
+        class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-1f2ktpx-MuiLinearProgress-bar1"
+      />
+      <span
+        class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1rvn8xp-MuiLinearProgress-bar2"
+      />
+    </span>
+    <div
+      class="MuiBox-root css-3kv8uz"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,17 +1,24 @@
-import { UserCard } from "./sections/users/UserCard";
-import { useUsers } from "./sections/users/useUsers";
+import React, { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import DrawerAppBar from './components/AppBar/AppBar';
+import { LinearProgress } from '@mui/material';
+
+const GenreSearchView = lazy(() => import('./views/GenreSearch/GenreSearchView'));
+const ArtistDetailView = lazy(() => import('./views/ArtistDetails/ArtistDetailView'));
+const FavoritesListView = lazy(() => import('./views/FavoritesList/FavoritesListView'));
 
 export function App() {
-	const users = useUsers();
 
-	return (
-		<div className="App">
-			<h3>⚡⚛️ Vite React Best Practices Template (by Codely)</h3>
-			<h2>Current users</h2>
-
-			{users.map((user) => (
-				<UserCard key={user.name} user={user} />
-			))}
-		</div>
-	);
+  return (
+    <>
+      <DrawerAppBar />
+      <Suspense fallback={<LinearProgress color="secondary" />}>
+        <Routes>
+          <Route path="/" Component={GenreSearchView} />
+          <Route path="/artist/:artistId" Component={ArtistDetailView} />
+          <Route path="/favorites" Component={FavoritesListView} />
+        </Routes>
+      </Suspense>
+    </>
+  );
 }

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GenreChips /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-4z29z6"
+  >
+    <span
+      class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+    >
+      Genres:
+    </span>
+    <div
+      class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorPrimary MuiChip-filledPrimary css-uy9ylj-MuiChip-root"
+    >
+      <span
+        class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+      >
+        Pop
+      </span>
+    </div>
+    <div
+      class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorPrimary MuiChip-filledPrimary css-uy9ylj-MuiChip-root"
+    >
+      <span
+        class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+      >
+        Rock
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
