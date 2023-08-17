@@ -11,11 +11,19 @@ export const CardDescription = styled.div(() => ({
   gap: '1em',
   minHeight: '40vh',
   padding: '0 2em',
-  width: '20vw',
+  width: "70vw",
+  "@media (min-width: 768px)": {
+    width: "70vw",
+  },
+  "@media (min-width: 900px)": {
+    width: "28vw",
+  },
+  "@media (min-width: 1200px)": {
+    width: "20vw",
+  },
 }));
 
 export const CardFront = styled.div<CardFrontProps>(props => ({
-  width: '100%',
   minHeight: '40vh',
   overflow: 'hidden',
   display: 'flex',
@@ -26,4 +34,15 @@ export const CardFront = styled.div<CardFrontProps>(props => ({
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   borderRadius: '4px',
+  padding: '0 2em',
+  width: "70vw",
+  "@media (min-width: 768px)": {
+    width: "70vw",
+  },
+  "@media (min-width: 900px)": {
+    width: "28vw",
+  },
+  "@media (min-width: 1200px)": {
+    width: "20vw",
+  },
 }));

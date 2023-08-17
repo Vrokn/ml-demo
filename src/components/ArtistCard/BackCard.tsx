@@ -37,11 +37,12 @@ const BackCard = ({ artist, primaryGenres, secondaryGenres, isPresent, handleCli
       />
     )}
     <Button
-      children={isPresent ? "Remove" : "Add"}
       onClick={handleClick}
       startIcon={isPresent ? <StarIcon /> : <StarBorderIcon />}
       variant={isPresent ? "contained" : "outlined"}
-    />
+    >
+      {isPresent ? "Remove" : "Add"}
+    </Button>
   </CardDescription>
 );
 
