@@ -10,8 +10,8 @@
 
 ## 🔦 Linting
 
-- `npm run lint`: Run linter
-- `npm run lint:fix`: Fix lint issues
+- `yarn lint`: Run linter
+- `yarn lint:fix`: Fix lint issues
 
 ## 📐 Project Approach and Highlights
 

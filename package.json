@@ -12,8 +12,6 @@
     "start": "vite --port 3003 --open",
     "build": "vite build",
     "test": "jest --watch --config=jest.config.js",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
     "lint": "eslint --ignore-path .gitignore . && stylelint **/*.scss",
     "lint:fix": "eslint --fix --ignore-path .gitignore . && stylelint --fix **/*.scss",
     "preview": "vite preview"
