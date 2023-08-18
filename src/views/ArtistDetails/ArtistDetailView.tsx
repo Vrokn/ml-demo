@@ -110,54 +110,53 @@ const ArtistDetailView = () => {
           </Box>
         )}
       </Box>
-      {
-        similarArtists.length > 0 && (
-          <Box sx={{ overflow: 'auto', padding: '2em', maxHeight: '85vh', width: '60%' }} my={0.5}>
-            <Typography variant='h5' color="secondary">Similar artists:</Typography>
-            <Grid container>
-              {similarArtists.map((similarArtist: Artist) => (
-                <Grid item xl={6} sm={12} key={similarArtist.id}>
-                  <Box display="flex" gap="2em" alignItems="center" width="100%" my={1}>
-                    <Box display="flex" flexDirection="column">
-                      <img src={similarArtist.image} alt={similarArtist.name} style={{
-                        height: '140px',
-                        width: '140px',
-                        objectFit: 'cover',
-                        borderRadius: '4px'
+      {similarArtists.length > 0 && (
+        <Box sx={{ overflow: 'auto', padding: '2em', maxHeight: '85vh', width: '60%' }} my={0.5}>
+          <Typography variant='h5' color="secondary">Similar artists:</Typography>
+          <Grid container>
+            {similarArtists.map((similarArtist: Artist) => (
+              <Grid item xl={6} sm={12} key={similarArtist.id}>
+                <Box display="flex" gap="2em" alignItems="center" width="100%" my={1}>
+                  <Box display="flex" flexDirection="column">
+                    <img src={similarArtist.image} alt={similarArtist.name} style={{
+                      height: '140px',
+                      width: '140px',
+                      objectFit: 'cover',
+                      borderRadius: '4px'
+                    }}
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = 'https://placehold.co/400?text=No+image';
                       }}
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).src = 'https://placehold.co/400?text=No+image';
-                        }}
-                      />
-                      <Button
-                        fullWidth
-                        onClick={() => handleClick(similarArtist)}
-                        startIcon={isPresent(similarArtist.id) ? <StarIcon /> : <StarBorderIcon />}
-                        variant={isPresent(similarArtist.id) ? "contained" : "outlined"}
-                        size='small'
-                      >
-                        {isPresent(similarArtist.id) ? "Remove" : "Add"}
-                      </Button>
-                    </Box>
-                    <Box display="flex" flexDirection="column">
-                      <Typography variant="h6"><Link href={`/artist/${similarArtist.id}`}>{similarArtist.name}</Link></Typography>
-                      <Typography variant="body2" color="secondary" >
-                        Genres: {similarArtist.genres.map((genre: Genre) =>
-                          <Chip
-                            key={genre.id}
-                            label={genre.name}
-                            color='primary'
-                            size="small"
-                            variant='outlined'
-                          />)}
-                      </Typography>
-                    </Box>
+                    />
+                    <Button
+                      fullWidth
+                      onClick={() => handleClick(similarArtist)}
+                      startIcon={isPresent(similarArtist.id) ? <StarIcon /> : <StarBorderIcon />}
+                      variant={isPresent(similarArtist.id) ? "contained" : "outlined"}
+                      size='small'
+                    >
+                      {isPresent(similarArtist.id) ? "Remove" : "Add"}
+                    </Button>
                   </Box>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
-        )}
+                  <Box display="flex" flexDirection="column">
+                    <Typography variant="h6"><Link href={`/artist/${similarArtist.id}`}>{similarArtist.name}</Link></Typography>
+                    <Typography variant="body2" color="secondary" >
+                      Genres: {similarArtist.genres.map((genre: Genre) =>
+                        <Chip
+                          key={genre.id}
+                          label={genre.name}
+                          color='primary'
+                          size="small"
+                          variant='outlined'
+                        />)}
+                    </Typography>
+                  </Box>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      )}
     </Box >
   );
 };

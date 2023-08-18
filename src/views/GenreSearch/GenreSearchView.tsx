@@ -57,7 +57,7 @@ const GenreSearchView: React.FC = () => {
           )}
         />
       </SearchContainer>
-      <Grid container sx={{ width: '80%', overflow: 'hidden' }} spacing={4}>
+      <Grid container sx={{ width: '80%' }} spacing={4}>
         {artists.map((item: Artist) => (
           <Grid item lg={4} md={6} xs={12} key={item.id}>
             <ArtistCard artist={item} />

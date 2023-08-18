@@ -12,7 +12,7 @@ const FavoritesListView: React.FC = () => {
     return artists.length > 0 ? (
       <>
         <Typography variant='h4' color="primary" sx={{ marginBottom: '1em' }}>My saved artists:</Typography>
-        <Grid container sx={{ width: '80%', overflow: 'hidden' }} spacing={4}>
+        <Grid container sx={{ width: '80%' }} spacing={4}>
           {artists.map((item: Artist) => (
             <Grid item lg={4} md={6} xs={12} key={item.id}>
               <ArtistCard artist={item} />
@@ -21,7 +21,7 @@ const FavoritesListView: React.FC = () => {
         </Grid>
       </>
     ) : (
-      <Box display="flex" height="92vh" alignItems="center">
+      <Box display="flex" height="calc(100vh - 64px);" alignItems="center">
         <Typography variant='h4' color="secondary" textAlign="center">
           You don&apos;t have any saved artists :(
           <br />

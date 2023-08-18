@@ -9,7 +9,6 @@ export const BackgroundContainer = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   width: '100%',
-  overflow: 'auto',
   backgroundColor: 'white',
   alignItems: 'center',
   flex: 1,

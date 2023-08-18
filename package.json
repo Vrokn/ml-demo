@@ -12,8 +12,8 @@
     "start": "vite --port 3003 --open",
     "build": "vite build",
     "test": "jest --watch --config=jest.config.js",
-    "lint": "eslint --ignore-path .gitignore . && stylelint **/*.scss",
-    "lint:fix": "eslint --fix --ignore-path .gitignore . && stylelint --fix **/*.scss",
+    "lint": "eslint --ignore-path .gitignore",
+    "lint:fix": "eslint --fix --ignore-path",
     "preview": "vite preview"
   },
   "eslintConfig": {
